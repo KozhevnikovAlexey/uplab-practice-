@@ -1,0 +1,119 @@
+﻿
+body {
+	color: #212121;
+	font-family: "Museo Sans Cyrl -300",Arial, sans-serif;
+	font-size: 14px;	
+	background: url("../img/bg.png")  no-repeat scroll left top; 
+	/*background: url("../img/bg_1.png")  no-repeat scroll left top; */
+}
+
+.temp{
+	margin:40px; 
+}
+
+
+.flex {
+ 	 display: flex;
+
+    flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    width: 80%;
+    height: 277px;
+    margin: auto;
+}
+
+.layer {
+	/*width: 33.3%;*/
+	/*width: 370px;*/
+	height: 277px;
+	order: 1;
+   flex: 1 1 25%;
+   margin-right: 31px;
+   margin-bottom: 31px;
+   padding: 30px; 
+    overflow: hidden;
+   align-content:space-between;
+}	
+
+
+.layer:hover{
+	background-color: #ffffff;
+
+}
+
+.layer .text_date {
+	opacity: 0.5;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-left: 1px; 
+}
+
+.layer .text_title {
+	font-family: "Museo Sans Cyrl -700";
+	font-size: 20px;
+
+	font-weight: 400;
+	line-height: 25px;
+	padding-left: 1px; 
+}
+
+.layer .text_body {
+	font-family: "Museo Sans Cyrl -300";
+	font-size: 16px;
+	height: 60px;	
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.img_baner {
+	color: #FFFFFF;
+}
+
+ .img_baner_01 {
+	background: url("../img/img_baner_content/img_baner_01.png")  no-repeat scroll left top; 
+}
+
+
+ .img_baner_02 {
+	background: url("../img/img_baner_content/img_baner_04.png")  no-repeat scroll left top; 
+}
+
+ .img_baner_03 {
+	background: url("../img/img_baner_content/img_baner_03.png")  no-repeat scroll left top; 
+}
+
+ .img_baner_04 {
+	background: url("../img/img_baner_content/img_baner_02.png")  no-repeat scroll left top; 
+}
+
+
+/*неработает надо допилить*/
+ /*.img_baner_04:hover{
+	background-color:  rgba(0, 0, 0, 0.3);
+}
+*/
+/*
+background-image: linear-gradient(to left, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);*/
+
+
+
+
+#textbox:before{
+    content:"";
+    display:block;
+    height:20px;
+    position:relative;
+    top:70px;
+    background-image: linear-gradient(to left, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+}
+
+
+
+.layer:hover #textbox:before{
+    content:"";
+    display:block;
+    height:20px;
+    position:relative;
+    top:70px;
+    background-image: linear-gradient(to left, #ffffff 0%, rgba(245, 245, 245, 0) 100%);
+}
