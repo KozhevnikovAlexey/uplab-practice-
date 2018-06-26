@@ -14,24 +14,69 @@ body {
 
 .flex {
  	 display: flex;
-
     flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
-    width: 80%;
+    width: 85%;
     height: 277px;
     margin: auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flexbox-wrapper {
+	width: 260px;
+	height: 277px;
+    /*border: 1px solid #333;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*align-content: center; word-wrap: break-word;*/
+  
+	
+
+}
+.flexbox-wrapper  div .text_body {
+	width: 240px;
+	height: 63px;
+}
+.flexbox-wrapper  div .text_date {
+	width: 240px;
+	height: 15px;
+}
+.flexbox-wrapper  div .text_title {
+	width: 240px;
+	height: 63px;
+}
+.flexbox-wrapper  div {
+	height: 5%;
+	align-self: stretch; align-items: stretch;
+  display: flex;
+  align-content: space-between;
+}
+.img_baner .flexbox-wrapper  div {
+	width: 240px;
+height: 50%;
+align-self: stretch; align-items: stretch;
+  display: flex;
+  align-content: space-between;
 }
 
 .layer {
 	/*width: 33.3%;*/
-	/*width: 370px;*/
 	height: 277px;
 	order: 1;
    flex: 1 1 25%;
    margin-right: 31px;
    margin-bottom: 31px;
    padding: 30px; 
-    overflow: hidden;
-   align-content:space-between;
+   word-wrap: break-word;
+    align-items: center;
+
+    /*overflow: hidden;*/
+   /*align-content:space-between;*/
 }	
 
 
@@ -45,13 +90,12 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	padding-left: 1px; 
+	padding-left: 1px;  
 }
 
 .layer .text_title {
 	font-family: "Museo Sans Cyrl -700";
 	font-size: 20px;
-
 	font-weight: 400;
 	line-height: 25px;
 	padding-left: 1px; 
@@ -65,38 +109,25 @@ body {
 	line-height: 24px;
 }
 
+ .text {
+   vertical-align: middle;
+   align-items: center;
+   margin:auto; 
+}
+
+.img_baner .text_title {
+	/*padding-top: 115px;*/
+}
+
 .img_baner {
 	color: #FFFFFF;
 }
 
- .img_baner_01 {
-	background: url("../img/img_baner_content/img_baner_01.png")  no-repeat scroll left top; 
+.img_baner:hover{
+	-webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.3);
+	-moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.3);
+	box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.3);
 }
-
-
- .img_baner_02 {
-	background: url("../img/img_baner_content/img_baner_04.png")  no-repeat scroll left top; 
-}
-
- .img_baner_03 {
-	background: url("../img/img_baner_content/img_baner_03.png")  no-repeat scroll left top; 
-}
-
- .img_baner_04 {
-	background: url("../img/img_baner_content/img_baner_02.png")  no-repeat scroll left top; 
-}
-
-
-/*неработает надо допилить*/
- /*.img_baner_04:hover{
-	background-color:  rgba(0, 0, 0, 0.3);
-}
-*/
-/*
-background-image: linear-gradient(to left, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);*/
-
-
-
 
 #textbox:before{
     content:"";
@@ -116,4 +147,4 @@ background-image: linear-gradient(to left, #f5f5f5 0%, rgba(245, 245, 245, 0) 10
     position:relative;
     top:70px;
     background-image: linear-gradient(to left, #ffffff 0%, rgba(245, 245, 245, 0) 100%);
-}
+ }
