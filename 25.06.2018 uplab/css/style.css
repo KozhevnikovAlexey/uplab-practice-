@@ -7,10 +7,89 @@ body {
 	/*background: url("../img/bg_1.png")  no-repeat scroll left top; */
 }
 
-.temp{
-	margin:40px; 
+.Header{
+	height: 507px;
+	background-color: #0098db;
+	margin: 0 ; 
 }
 
+.temp_1 {		
+	height: 70px;
+}
+
+.Header .logo {
+	position: relative;
+	width: 153px;
+	height: 20px;
+	align-items: center;
+	margin:0px auto 217px auto;
+}
+.tabs {
+	position: relative;
+	color: #ffffff;
+    text-align: center;
+}
+.Header .SVX {
+	/* Style for "SVX" */
+	opacity: 0.07;
+	font-family: "Museo Sans Cyrl -900";
+	font-size: 509px;
+	font-weight: 400;
+	line-height: 40.55px;
+	text-transform: uppercase;
+	/* Text style for "SVX" */
+	letter-spacing: -21.1px;
+	position: relative;
+	z-index: 1;
+		cursor: default;
+}
+
+.temp {
+	z-index: 2;
+	position: relative;
+
+}
+
+.Header .filter_button {
+	float: left;
+
+}
+
+.Header .filter_but {
+
+	margin-right: 18px;
+	color: #ffffff;
+	font-family: "Museo Sans Cyrl -500";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	/* Text style for "Архив" */
+	letter-spacing: 0.16px;
+}
+
+.Header .filter_but:hover {
+	opacity: 0.7;
+	border-bottom: 1px dashed #ffffff;
+}
+
+.Header .filter_but:active {
+	opacity: 0.7;
+	border-bottom: 1px dashed #ffffff;
+}
+
+.tabs .temp {
+	float: left;
+	margin-left: 48px;
+}
+
+.tabs .title {
+	/* Style for "Об аэропор" */
+	font-family: "Museo Sans Cyrl -500";
+	font-size: 86px;
+	font-weight: 400;
+	float: left;
+
+}
 
 .flex {
  	 display: flex;

@@ -14,6 +14,17 @@ font-style: normal;
 
 @font-face{
 	
+font-family: "Museo Sans Cyrl -500";
+
+src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff")format("woff");
+
+font-weight: bold;
+
+font-style: normal;
+}
+
+@font-face{
+	
 font-family: "Museo Sans Cyrl -700";
 
 src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff")format("woff");
@@ -22,3 +33,15 @@ font-weight: bold;
 
 font-style: normal;
 }
+
+@font-face{
+	
+font-family: "Museo Sans Cyrl -900";
+
+src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff")format("woff");
+
+font-weight: bold;
+
+font-style: normal;
+}
+
